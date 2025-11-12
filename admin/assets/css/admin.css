@@ -1,0 +1,144 @@
+/* ===============================
+   CMS - Unified Admin Styles
+   Theme: Olive Green (Zeytouni)
+   =============================== */
+
+:root {
+  --color-primary: #6b8e23;
+  --color-secondary: rgba(0, 0, 0, 0.15);
+  --color-bg-primary: #f7f9f5;
+  --color-bg-secondary: #1a3e3e;
+  --color-text: #333;
+  --color-white: #fff;
+  --color-muted: #6c757d;
+  --color-hover: rgba(255, 255, 255, 0.25);
+}
+
+/* ===============================
+   Global
+   =============================== */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Tahoma, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 80px;
+  background-color: var(--color-bg-secondary) !important;
+}
+
+#main-container {
+  height: 100vh;
+}
+
+#main-content {
+  height: calc(100vh - 80px);
+}
+
+/* ===============================
+   Sidebar
+   =============================== */
+#main-sidebar,
+#mobile-sidebar {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+#main-sidebar .menu-nav li a,
+#mobile-sidebar .menu-nav li a {
+  color: var(--color-white) !important;
+  border-radius: 8px;
+  padding: 10px 8px;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+  position: relative;
+}
+
+#main-sidebar .menu-nav li a:hover,
+#main-sidebar .menu-nav li a.active,
+#mobile-sidebar .menu-nav li a:hover,
+#mobile-sidebar .menu-nav li a.active {
+  background: var(--color-hover) !important;
+  transform: translateX(4px);
+}
+
+#main-sidebar .menu-nav li a i,
+#mobile-sidebar .menu-nav li a i {
+  width: 28px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+#main-sidebar .sub-menu,
+#mobile-sidebar .sub-menu {
+  margin-top: 5px;
+}
+
+#main-sidebar .sub-menu .nav-link,
+#mobile-sidebar .sub-menu .nav-link {
+  font-size: 0.95rem;
+  padding: 8px 8px 8px 45px !important;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+}
+
+/* ===============================
+   Buttons & Forms
+   =============================== */
+.btn-primary {
+  background: var(--color-primary);
+  border: none;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: var(--color-secondary);
+}
+
+.btn-success {
+  background: var(--color-secondary);
+  border: none;
+}
+
+.btn-success:hover {
+  background: var(--color-primary);
+}
+
+/* ===============================
+   Login Page
+   =============================== */
+.login-body {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card {
+  border: none;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 1rem;
+  padding: 2rem 2.5rem;
+}
+
+.login-card .btn {
+  border-radius: 50px;
+}
+
+.login-card code {
+  background: #e2e8f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.85em;
+}

@@ -1,0 +1,116 @@
+:root {
+  /* 🎨 Theme Colors */
+  --color-primary: #ff4900;
+  --color-secondary: #ff753d;
+  --color-accent: #ff4f00;
+  --color-bg-main: #f8fcf4;
+  --color-bg-body: #fffda3;
+  --color-bg-footer: #501616;
+  --color-footer-text: #f4f1de;
+  --color-text-main: #2f2f25;
+  --color-post-border: #501616;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Base */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-bg-body);
+  min-height: 100vh;
+  font-family: "Century Gothic", Tahoma, sans-serif;
+  font-size: 0.9rem;
+  color: var(--color-text-main);
+  margin: 0;
+}
+
+/* Header */
+.header-title {
+  font-family: "Chicle", cursive;
+  color: var(--color-primary);
+  font-size: 3.5rem;
+  letter-spacing: 0.2em;
+  padding-top: 130px;
+}
+
+.header-subtitle {
+  color: var(--color-primary);
+  letter-spacing: 0.2em;
+  font-size: 1.2rem;
+}
+
+/* Custom Nav */
+.custom-nav {
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.custom-nav .nav-link {
+  font-family: "Chicle", cursive;
+  color: var(--color-secondary);
+  border: 1px dashed var(--color-accent);
+  border-radius: 8px;
+  padding: 0.6rem 1.5rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.custom-nav .nav-link:hover,
+.custom-nav .nav-link.active {
+  background: var(--color-primary);
+  color: #fff !important;
+  border-color: var(--color-primary);
+}
+
+/* Sidebar */
+.sidebar-box {
+  background: var(--color-bg-main);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--color-shadow);
+}
+
+.sidebar-title {
+  font-family: "Chicle", cursive;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-menu a {
+  color: var(--color-text-main);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.sidebar-menu a:hover {
+  color: var(--color-primary);
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-bg-footer);
+  color: var(--color-footer-text);
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .sidebar {
+    position: static !important;
+  }
+}

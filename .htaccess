@@ -1,0 +1,29 @@
+# /.htaccess
+<Files "*.php">
+    Require all denied
+</Files>
+
+<Files "index.php">
+    Require all granted
+</Files>
+
+<Files "setup.php">
+    Require all granted
+</Files>
+
+<Files "admin/index.php">
+    Require all granted
+</Files>
+
+RewriteEngine On
+
+# Allow real files/directories (assets, etc.)
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Route /admin/* to /admin/index.php
+RewriteRule ^admin/(.*)$ admin/index.php [QSA,L]
+
+# Route everything else to /index.php
+RewriteRule ^(.*)$ index.php [QSA,L]
