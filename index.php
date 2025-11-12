@@ -6,8 +6,6 @@
  * if the database is not ready. It ensures only one entry point is used.
  */
 
-dd('1');
-
 // Prevent double inclusion (optional but safe)
 if (defined('CMS_LOADED')) {
     return;
@@ -17,8 +15,6 @@ if (defined('CMS_LOADED')) {
 define('CMS_LOADED', true);
 define('__ROOT__', __DIR__); // Points to project root (where this file is)
 define('DEBUG', true);       // Set to false in production!
-
-dd('111');
 
 // Load core dependencies
 require_once __DIR__ . '/core/db.php';
