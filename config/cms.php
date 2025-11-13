@@ -10,4 +10,4 @@ if (!defined('CMS_LOADED')) {
     exit('Direct access not allowed.');
 }
 
-define('CMS_NAME', 'Sunoid');
+define('CMS_NAME', 'Sunoid CMS');
