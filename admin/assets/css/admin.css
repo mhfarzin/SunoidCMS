@@ -12,6 +12,7 @@
   --color-white: #fff;
   --color-muted: #6c757d;
   --color-hover: rgba(255, 255, 255, 0.25);
+  --color-bg-card: rgba(255, 255, 255, 0.92);
 }
 
 /* ===============================
@@ -22,7 +23,7 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Inter", "Segoe UI", Tahoma, sans-serif;
-  background: var(--color-bg);
+  background: var(--color-bg-primary);
   color: var(--color-text);
 }
 
@@ -87,13 +88,17 @@ header {
 #mobile-sidebar .sub-menu .nav-link {
   font-size: 0.95rem;
   padding: 8px 8px 8px 45px !important;
-  background: rgba(0, 0, 0, 0.15);
+  background: var(--color-secondary);
   border-radius: 6px;
 }
 
 /* ===============================
    Buttons & Forms
    =============================== */
+.form {
+  max-width: 768px;
+}
+
 .btn-primary {
   background: var(--color-primary);
   border: none;
@@ -117,7 +122,11 @@ header {
    Login Page
    =============================== */
 .login-body {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -127,7 +136,7 @@ header {
 .login-card {
   border: none;
   backdrop-filter: blur(8px);
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--color-bg-card);
   border-radius: 1rem;
   padding: 2rem 2.5rem;
 }
@@ -137,8 +146,12 @@ header {
 }
 
 .login-card code {
-  background: #e2e8f0;
+  background: var(--color-bg-primary);
   padding: 2px 6px;
   border-radius: 4px;
   font-size: 0.85em;
 }
+
+/* ===============================
+
+   =============================== */

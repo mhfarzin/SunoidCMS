@@ -54,6 +54,7 @@ try {
             template VARCHAR(100) DEFAULT NULL,
             content TEXT,
             options JSON DEFAULT NULL,
+            is_published TINYINT(1) NOT NULL DEFAULT 1,
             meta_title VARCHAR(255),
             meta_description TEXT,
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,

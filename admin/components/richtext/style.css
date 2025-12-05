@@ -1,0 +1,27 @@
+.richtext-container {
+    position: relative;
+}
+
+.richtext-container .note-editor {
+    border: 1px solid var(--color-secondary);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px var(--color-secondary);
+    overflow: hidden;
+}
+
+.richtext-container .note-toolbar {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom: none;
+}
+
+.richtext-container .note-editable {
+    font-family: Tahoma, sans-serif;
+    line-height: 1.8;
+    padding: 20px;
+}
+
+.richtext-container .note-editable p {
+    margin-bottom: 16px;
+}
+

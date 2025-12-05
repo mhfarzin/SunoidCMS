@@ -1,2 +1,2 @@
-set COMPOSE_PROJECT_NAME=Sunoid
+set COMPOSE_PROJECT_NAME=sunoid-cms
 docker-compose up -d --build

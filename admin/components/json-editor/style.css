@@ -1,0 +1,9 @@
+.json-editor-container {
+  font-family: Tahoma, sans-serif;
+}
+
+.json-editor-element {
+  width: 100%;
+  background-color: var(--bs-secondary-bg-subtle);
+  margin: 0;
+}

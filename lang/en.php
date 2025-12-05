@@ -47,6 +47,8 @@ return [
     'pages' => [
         'title' => 'Pages',
         'list_title' => 'List Pages',
+        'create_title' => 'Create Pages',
+        'edit_title' => 'Edit Page'
     ],
 
     // Common

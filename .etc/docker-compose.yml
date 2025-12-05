@@ -28,7 +28,7 @@ services:
       - db_data:/var/lib/mysql
 
 x-project:
-  name: sunoid
+  name: sunoid-cms
 
 volumes:
   db_data:

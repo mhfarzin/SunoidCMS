@@ -28,7 +28,7 @@ $current_page = $_SERVER['SCRIPT_NAME'];
                     </a>
                 </li>
                 <li class="nav-item mb-1">
-                    <a href="/admin/pages/create.php" class="nav-link text-white <?= ($current_page == '/admin/pages/create.php') ? 'active' : '' ?>">
+                    <a href="/admin/pages/manage.php" class="nav-link text-white <?= ($current_page == '/admin/pages/manage.php') ? 'active' : '' ?>">
                         <i class="bi bi-plus-circle pe-2"></i> <?= lang('sidebar.create_page') ?>
                     </a>
                 </li>
